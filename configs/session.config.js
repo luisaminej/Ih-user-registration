@@ -4,7 +4,7 @@ const MongoStore = require('connect-mongo')
 
 module.exports = app => {
 //PARA GESTIONAR LA SEGURIDAD EN HEROKU.COM 
-app.set("trusty proxy", 1)
+app.set("trust proxy", 1)
 
 
 // INSERTAR LA SESIÓN
