@@ -34,7 +34,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const app_name = require('./package.json').name;
-const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
+// const debug = require('debug')(`${app_name}:${path.basename(__filename).split('.')[0]}`);
+//solo sirve cuando trabajo en local
 
 ///Layout Middleware
 app.use((req, res, next) => {
